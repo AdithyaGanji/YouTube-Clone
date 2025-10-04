@@ -1,0 +1,143 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 55px;
+
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+/* --------------- LEFT SECTION --------------- */
+
+.left-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger-menu-icon {
+  height: 25px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.youtube-logo-icon {
+  height: 20px;
+}
+
+/* --------------- MIDDLE SECTION --------------- */
+
+.middle-section {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 50px;
+  margin-right: 10px;
+  max-width: 450px;
+}
+
+.search-box {
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  border: 1px solid rgb(200, 200, 200);
+  font-size: 16px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.search-box::placeholder {
+  font-size: 16px;
+}
+
+.search-button {
+  width: 65px;
+  height: 39px;
+  margin-left: -1px;
+  margin-right: 10px;
+  border: 1px solid rgb(200, 200, 200);
+  background-color: rgb(247, 247, 247);
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.icons-container .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 8px 8px;
+  font-size: 12px;
+  border-radius: 2px;
+  bottom: -38px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.icons-container:hover .tooltip {
+  opacity: 1;
+}
+
+.search-icon {
+  height: 23px;
+}
+
+.voice-search-button {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(248, 248, 248);
+  border: none;
+  border-radius: 19px;
+}
+
+.voice-search-icon {
+  height: 25px;
+}
+
+/* --------------- RIGHT SECTION --------------- */
+
+.right-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+  margin-right: 24px;
+  flex-shrink: 0;
+}
+
+.upload-icon, .youtube-apps-icon, .notifications-icon {
+  height: 25px;
+  cursor: pointer;
+}
+
+.notifications {
+  position: relative;
+}
+
+.notification-count {
+  background-color: rgb(204, 0, 0);
+  color: white;
+  font-size: 9px;
+  position: absolute;
+  border-radius: 15px;
+  padding: 2px 5px;
+  top: 0;
+  right: -2px;
+}
+
+.current-user-picture {
+  height: 30px;
+  border-radius: 15px;
+}
